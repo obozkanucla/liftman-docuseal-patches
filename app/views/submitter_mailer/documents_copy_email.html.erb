@@ -1,0 +1,23 @@
+<%# Meadows override of DocuSeal's documents_copy_email. Greets the signer
+    by first name, Meadows-branded body. Preserves the link to the signed
+    copy so signers can re-access it. %>
+<p>
+  Hi <%= @submitter.first_name.presence || 'there' %>,
+</p>
+<p>
+  Thanks for signing your hire agreement with Meadows Forklifts. A fully-signed
+  copy is attached to this email for your records.
+</p>
+<p>
+  You can also review and download it any time from this link:
+</p>
+<p>
+  <%= link_to @submitter.submission.name || @submitter.submission.template.name, submissions_preview_url(@submitter.submission.slug, { sig: @sig, host: @custom_domain || ENV.fetch('EMAIL_HOST', Docuseal.default_url_options[:host]) }.compact) %>
+</p>
+<p>
+  If anything on the signed document needs correction, reply to this email and
+  we will sort it.
+</p>
+<p>
+  Thanks,<br>Meadows Forklifts
+</p>
