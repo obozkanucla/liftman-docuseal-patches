@@ -1,0 +1,14 @@
+<%# Liftman/Meadows override of DocuSeal's signer-page banner. Keeps a small
+    DocuSeal attribution on the right to satisfy AGPL §7(b) while letting the
+    prominent branding be Meadows Forklifts. %>
+<div class="flex mt-4 w-full items-center justify-between px-4">
+  <div class="flex items-center space-x-3">
+    <span class="text-xl md:text-2xl font-bold" style="color:#01007f;">Meadows Forklifts</span>
+    <span class="hidden md:inline text-xs" style="color:#666;">Fleet Management</span>
+  </div>
+  <div class="text-right">
+    <span class="text-xs" style="color:#888;">
+      E-signatures powered by <a href="https://www.docuseal.com/" rel="noopener" target="_blank" style="color:#666;text-decoration:underline;"><%= Docuseal.product_name %></a>
+    </span>
+  </div>
+</div>
