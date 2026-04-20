@@ -1,6 +1,3 @@
 en:
-  # Override DocuSeal free-edition attribution in outbound emails. AGPL §7(b)
-  # attribution obligation is met in our Liftman admin UI (staff-facing
-  # "Powered by DocuSeal" on /contracts/signing-templates/), so customer-facing
-  # invitation emails carry the Meadows-branded footer instead.
-  sent_using_product_name_free_document_signing_html: '&mdash;<br>Sent by Meadows Forklifts Ltd &middot; <a href="mailto:enquiries@meadows.equipment">enquiries@meadows.equipment</a>'
+  sent_using_product_name_free_document_signing_html: "&mdash;<br>Sent by Meadows Forklifts Ltd &middot; <a href=\"mailto:enquiries@meadows.equipment\">enquiries@meadows.equipment</a>"
+  sent_using_product_name_in_testing_mode_html: "&mdash;<br>Sent by Meadows Forklifts Ltd (staging)"
